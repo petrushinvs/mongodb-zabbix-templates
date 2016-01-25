@@ -22,13 +22,18 @@ Google it for more information.
 1. Downoad package from github.
 2. Import xml templates to Zabbix server via browser
 Configuration -> Templates -> Import template
-3. Upload *.pl files to zabbix server and put it to external scrips folder (/usr/lib/zabbix/externalscrips for my server)
+3. Upload *.pl files to zabbix server, put it to external scrips folder (/usr/lib/zabbix/externalscrips for my server), and
+<pre><code>chown +x mongo*.pl</code></pre>
 4. Install on zabbix server required perl modules via command line
-<pre><code>
-sudo cpan List::Util
+<pre><code>sudo cpan List::Util
 sudo cpan MongoDB
 sudo cpan Zabbix::Sender
 sudo cpan Getopt::Long
 </code></pre>
+5. Navigate to hosts configuration in zabbix server and add Mongo-DB template to host with mongodb instance.
+6. In Macros tab add the following data
+<pre><code>{$MONGODB_HOSTNAME} -> IP or DNS name of interface used by mongodb instance
+{$MONGODB_USER} -> User name (I've tested only users with root privileges)
+
 
 
