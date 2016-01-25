@@ -17,8 +17,12 @@ Technically, for fine mongodb performance tuning you need much more information 
 collect, store and visualize with Zabbix, and anyway it would be better to use specially designed mongodb tools. 
 Google it for more information.
 
-#How to install
+This package contains 3 templates for monitoring mongodb instances (Mongo-DB template), mongos instance (Mongos template) and replicaset health (Mongo-RS Health template).
+By customising your hosts configurations with this templates you can monitor lagre mongodb clusters. For us it monitors 10 mongodb instances in sharded 5 big replicasets, 4 instances of small metadata database, config database replicaset, 5 mongos routers and backup server.
 
+#How to install Mongo-DB template
+
+Mongo-DB template is used to collect the basic opcounters and  
 1. Downoad package from github.
 2. Import xml templates to Zabbix server via browser
 Configuration -> Templates -> Import template
@@ -39,6 +43,9 @@ sudo cpan Getopt::Long
 {$MONGODB_ZABBIX_NAME}  Server hostname, as it registered in zabbix (I use two different interfaces for each mongodb server, mongodb instance is using one, other services including zabbix agent - another).
 </code></pre>
 
+In a few minutes it starts to collect data. See the Misc: Data collector in zabbix latest data for easy debug.
+
+For Mongo-DB graphs go to Monitoring -> Graphs, then select the host with mongodb instance and select Mongo-DB Opcounters and Mongo-DB Network IO graphs. The best way to use this data by your team is to compose special zabbix screens with this graphs with all your servers. How to do this see https://www.zabbix.com/documentation/2.4/manual/config/visualisation/screens
 
 
 
