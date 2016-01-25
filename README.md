@@ -22,7 +22,8 @@ By customising your hosts configurations with this templates you can monitor lag
 
 #How to install Mongo-DB template
 
-Mongo-DB template is used to collect the basic opcounters and  
+Mongo-DB template is used to collect the basic mongo server opcounters and notify if the instance is gone.
+
 1. Downoad package from github.
 2. Import xml templates to Zabbix server via browser
 Configuration -> Templates -> Import template
