@@ -32,8 +32,13 @@ sudo cpan Getopt::Long
 </code></pre>
 5. Navigate to hosts configuration in zabbix server and add Mongo-DB template to host with mongodb instance.
 6. In Macros tab add the following data
-<pre><code>{$MONGODB_HOSTNAME} -> IP or DNS name of interface used by mongodb instance
-{$MONGODB_USER} -> User name (I've tested only users with root privileges)
+<pre><code>{$MONGODB_HOSTNAME}  IP or DNS name of interface used by mongodb instance
+{$MONGODB_USER}  User name
+{$MONGODB_PASS}  Password
+{$MONGODB_PORT}  Port used by mongodb instance
+{$MONGODB_ZABBIX_NAME}  Server hostname, as it registered in zabbix (I use two different interfaces for each mongodb server, mongodb instance is using one, other services including zabbix agent - another).
+</code></pre>
+
 
 
 
