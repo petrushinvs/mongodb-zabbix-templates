@@ -13,7 +13,7 @@ The main tasks of monitoring for us:
 6. Provide easy-to-use and easy-to-understand user view for staff.
 
 Technically, for fine mongodb performance tuning you need much more information than provides this templates, but its harder to 
-collect, store and visualize with Zabbix, and anyway will be better for you to use specially designed mongodb tools. 
+collect, store and visualize with Zabbix, and anyway it would be better to use specially designed mongodb tools. 
 Google it for more information.
 
 
