@@ -24,9 +24,9 @@ Google it for more information.
 Configuration -> Templates -> Import template
 3. Upload *.pl files to zabbix server and put it to external scrips folder (/usr/lib/zabbix/externalscrips for my server)
 4. Install on zabbix server required perl modules via command line
-`sudo cpan List::Util
-sudo cpan MongoDB
-sudo cpan Zabbix::Sender
-sudo cpan Getopt::Long`
+`sudo cpan List::Util`
+`sudo cpan MongoDB`
+`sudo cpan Zabbix::Sender`
+`sudo cpan Getopt::Long`
 
 
