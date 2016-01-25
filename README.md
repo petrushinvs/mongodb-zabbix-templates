@@ -1,5 +1,6 @@
 # mongodb-zabbix-templates
-Zabbix templates for mongodb monitoring
+
+#Zabbix templates for mongodb monitoring
 
 For a long time I've used the Mikoomi mongodb template for mongodb monitoring. It was work fine for us for all mongodb 2.x versions. 
 Since mongodb 3.x it fails and after a few patches I decide to made my own simple templates.
@@ -15,5 +16,17 @@ The main tasks of monitoring for us:
 Technically, for fine mongodb performance tuning you need much more information than provides this templates, but its harder to 
 collect, store and visualize with Zabbix, and anyway it would be better to use specially designed mongodb tools. 
 Google it for more information.
+
+#How to install
+
+1. Downoad package from github.
+2. Import xml templates to Zabbix server via browser
+Configuration -> Templates -> Import template
+3. Upload *.pl files to zabbix server and put it to external scrips folder (/usr/lib/zabbix/externalscrips for my server)
+4. Install on zabbix server required perl modules via command line
+`sudo cpan List::Util
+sudo cpan MongoDB
+sudo cpan Zabbix::Sender
+sudo cpan Getopt::Long`
 
 
