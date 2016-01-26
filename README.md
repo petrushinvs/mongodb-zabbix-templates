@@ -60,6 +60,7 @@ Mongos template is used to collect the basic mongos server opcounters and notify
 In case you run mongos instance on the same hardware with any mongodb instance and have the same hostname, user and pass Mongos template will use the Macros data from previously configured Mongo-DB template. You have to do only two steps to get Mongos running.
 
 1 Navigate to hosts configuration in zabbix server and add Mongos template to host with mongos instance.
+
 2. In Macros tab add the following data
 <pre><code>{$MONGOS_PORT}  Port used by mongodb instance</code></pre>
 In case the mongos instance is running on dedicated hardware or VM you have to add in Macros tab the following data
