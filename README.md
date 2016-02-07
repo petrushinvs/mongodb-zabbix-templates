@@ -86,6 +86,8 @@ Will add later
 
 ## Contacts
 
+Pls feel free to contact me
+
 http://petrushin.org/
 
 petrushinvs at gmail-dot-com
