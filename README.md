@@ -86,4 +86,5 @@ Will add later
 
 ## Contacts
 
-Will add later
+http://petrushin.org/
+petrushinvs at gmail-dot-com
